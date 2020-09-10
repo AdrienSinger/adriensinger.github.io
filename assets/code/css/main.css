@@ -1,0 +1,147 @@
+/* element 
+{
+    --main-color: rgb(237, 120, 106);
+    --secondary-color: rgb(237, 120, 106);
+} */
+
+@font-face 
+{
+    font-family: "Arvo-Bold";
+    src: url("../../font/Arvo/Arvo-Bold.ttf");
+}
+
+@font-face 
+{
+    font-family: "Arvo";
+    src: url("../../font/Arvo/Arvo-Regular.ttf");
+}
+
+.name-title
+{
+    font-family: Arvo-Bold, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: rgb(237, 120, 106);
+    text-shadow: rgba(0, 0, 0, 0.1) 0.1em 0.075em 0px;
+    font-size: 3em;
+    letter-spacing: 13px;
+}
+
+.name-title a 
+{
+    color: rgb(237, 120, 106);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .name-title 
+    {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 736px)
+{
+    .name-title 
+    {
+        font-size: 2em;
+        letter-spacing: 8px;
+        line-height: 1.325em;
+    }
+}
+
+.main-panel
+{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.main-color
+{
+    background-color: rgb(237, 120, 106);
+}
+
+.navi
+{
+    height: 50px;
+}
+
+.text-base
+{
+    font-family: Arvo, Helvetica, Arial, sans-serif;
+    color: rgb(165, 165, 165);
+}
+
+.text-title
+{
+    font-family: Arvo, Helvetica, Arial, sans-serif;
+    color: rgb(135, 135, 135);
+    font-size: 1.3em;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.vertical-center
+{
+    vertical-align: center;
+}
+
+.sticky-top
+{
+    top: 16px;
+}
+
+.flex-center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle
+{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgb(190, 190, 190);
+    margin: auto;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle:hover 
+{
+    background-color: rgb(237, 120, 106);
+	transition: all 0.5s;
+}
+
+.circle a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.line-1
+{
+    height: 1px;
+    background-color: rgb(229, 229, 229);
+}
+
+.line-2
+{
+    height: 2px;
+    background-color: rgb(229, 229, 229);
+}
+
+.mx-25
+{
+    margin-left: 25%;
+    margin-right: 25%;
+}
