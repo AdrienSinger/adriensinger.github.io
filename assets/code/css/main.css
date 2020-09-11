@@ -16,6 +16,30 @@
     src: url("../../font/Arvo/Arvo-Regular.ttf");
 }
 
+html 
+{
+    margin: auto;
+    max-width: 1280px;
+}
+
+body 
+{
+    vertical-align: middle;
+    text-align: center;
+}
+
+a
+{
+    color:  rgb(190, 190, 190);
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgb(135, 135, 135);
+    text-decoration: none;
+}
+
 .name-title
 {
     font-family: Arvo-Bold, Helvetica, Arial, sans-serif;
@@ -53,7 +77,6 @@
 .main-panel
 {
     max-width: 1280px;
-    margin: auto;
 }
 
 .main-color
@@ -63,13 +86,19 @@
 
 .navi
 {
-    height: 50px;
+    background-color: white;
+    height: 65px;
 }
 
 .text-base
 {
     font-family: Arvo, Helvetica, Arial, sans-serif;
     color: rgb(165, 165, 165);
+}
+
+.text-base.t-white
+{
+    color: white
 }
 
 .text-title
@@ -84,6 +113,11 @@
     text-align: center;
 }
 
+.text-left
+{
+    text-align: left;
+}
+
 .vertical-center
 {
     vertical-align: center;
@@ -91,7 +125,7 @@
 
 .sticky-top
 {
-    top: 16px;
+    top: 0;
 }
 
 .flex-center
@@ -122,10 +156,53 @@
 	transition: all 0.5s;
 }
 
+.labels
+{
+    border-spacing: 10px 0;
+}
+
+.label
+{
+    border-radius: 12px;
+    background-color: rgb(237, 120, 106);
+    margin: auto;
+
+    text-align: center;
+
+    display: table-cell;
+    flex-direction: column;
+    justify-content: left;
+}
+
 .circle a
 {
     color: white;
     text-decoration: none;
+}
+
+.image
+{
+    border: solid 6px rgb(229, 229, 229) !important;
+}
+
+.image.featured
+{
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.auto-size-image
+{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.max-w-700
+{
+    max-width: 700px;
 }
 
 .line-1
