@@ -158,20 +158,22 @@ a:hover
 
 .labels
 {
-    border-spacing: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .label
 {
     border-radius: 12px;
     background-color: rgb(237, 120, 106);
-    margin: auto;
 
-    text-align: center;
-
-    display: table-cell;
-    flex-direction: column;
-    justify-content: left;
+    white-space: nowrap;
+    width: -moz-min-content;
+	width: -webkit-min-content;
+    width: min-content;
+    
+    padding: 1px;
+    margin: 3px;
 }
 
 .circle a
