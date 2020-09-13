@@ -43,7 +43,6 @@ a:hover
 .name-title
 {
     font-family: Arvo-Bold, Helvetica, Arial, sans-serif;
-    font-weight: 700;
     color: rgb(237, 120, 106);
     text-shadow: rgba(0, 0, 0, 0.1) 0.1em 0.075em 0px;
     font-size: 3em;
@@ -54,6 +53,15 @@ a:hover
 {
     color: rgb(237, 120, 106);
     text-decoration: none;
+}
+
+.contact-title
+{
+    font-family: Arvo-Bold, Helvetica, Arial, sans-serif;
+    color: rgb(237, 120, 106);
+    text-shadow: rgba(0, 0, 0, 0.1) 0.1em 0.075em 0px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
 }
 
 @media screen and (max-width: 1280px)
