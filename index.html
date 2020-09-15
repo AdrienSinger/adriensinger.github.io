@@ -23,28 +23,40 @@
 		<p class="text-base m-0">Développeur avec un faible pour la psychologie et ses applications dans le game design
 		</p>
 		<!-- Additional description -->
-		<p class="toggle-target text-base m-0">More about me</p>
-		<a class="solid fa-2x fas fa-angle-down toggle-trigger" href="javascript:;"></a>
+		<!-- <p class="toggle-target text-base m-0">
+			D'abord attiré par l'animation, c'est pendant ma formation à 3Axes Institut que j'ai découvert une passion pour la programmation.
+			Très vite, j'y trouve mes marques et décide de me lancer complètement dans cette branche. Je souhaite délivrer une expérience agréable et impactante envers l'utilisateur.
+		</p>
+		<a class="solid fa-2x fas fa-angle-down toggle-trigger" href="javascript:;"></a> -->
 	</div>
 
 	<!-- NavBar -->
-	<nav class="navi sticky-top py-3">
-		<div class="row h-100">
-			<div class="col flex-center">
+	<nav class="navi sticky-top py-3 px-1">
+		<div class="nav-container h-100">
+			<div class="flex-center">
 				<div class="circle">
-					<a class="solid fab fa-linkedin-in" href="https://www.linkedin.com/in/adrien-singer/"
-						target="_blank"></a>
+					<a class="solid fas fa-home" href="index.html"></a>
 				</div>
 			</div>
-			<div class="col flex-center">
-				<div class="circle">
-					<a id="go-contact" class="solid fas fa-envelope" href="javascript:;"></a>
-				</div>
+			<div class="flex-center">
+				<a id="go-project-pro" href="javascript:;" class="text-nav m-0">Professionel</a>
 			</div>
-			<div class="col flex-center">
-				<div class="circle">
-					<a class="solid fas fa-file-alt" href="/assets/images/adrien/CV_Adrien_Singer.pdf"
-						target="_blank"></a>
+			<div class="flex-center">
+				<a id="go-project-perso" href="javascript:;" class="text-nav m-0">Personel</a>
+			</div>
+			<div class="flex-center">
+				<div class="nav-container">
+					<div class="nav-end-button">
+						<div class="circle">
+							<a id="go-contact" class="solid fas fa-envelope" href="javascript:;"></a>
+						</div>
+					</div>
+					<div class="nav-end-button">
+						<div class="circle">
+							<a class="solid fas fa-file-alt" href="/assets/images/adrien/CV_Adrien_Singer.pdf"
+								target="_blank"></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -53,7 +65,7 @@
 
 	<!-- Professional projects : Title -->
 	<div class="text-center m-5">
-		<p class="text-title m-0">EXPERIENCES PROFESSIONNELLES</p>
+		<p id="project-pro-target" class="text-title m-0">EXPERIENCES PROFESSIONNELLES</p>
 	</div>
 
 	<!-- Professional projects-->
@@ -92,7 +104,8 @@
 			</div>
 			<div class="line-2 my-3"></div>
 			<p class="text-base text-left m-0">
-				Au sein d'une équipe de développement, j'ai été chargé d'assurer les bonnes pratiques de programmation. J'ai également réalisé les points suivants : <br><br>
+				Au sein d'une équipe de développement, j'ai été chargé d'assurer les bonnes pratiques de programmation.
+				J'ai également réalisé les points suivants : <br><br>
 				• Refonte de l'architecture logicielle <br>
 				• Implémentation des éléments de gameplay <br>
 				• Shader de végétation sous-marine
@@ -144,7 +157,8 @@
 			</div>
 			<div class="line-2 my-3"></div>
 			<p class="text-base text-left m-0">
-				Ayant été seul développeur sur le projet, j'ai réalisé toute la partie programmation, on y retrouve notamment : <br><br>
+				Ayant été seul développeur sur le projet, j'ai réalisé toute la partie programmation, on y retrouve
+				notamment : <br><br>
 				• Solution sans fil entre l'Oculus Go, la Raspberry et un autre appareil <br>
 				• Communication en sockets C# à travers un point d'accès émit par la raspberry <br>
 				• Retranscription de la vue du casque sur le site web de l'appareil tiers
@@ -155,7 +169,8 @@
 	<!-- King Crusher -->
 	<div class="row p-2">
 		<div class="col-md p-0">
-			<div id="carouselControls" class="carousel slide image featured max-w-700 m-3" data-ride="carousel" data-interval="2500">
+			<div id="carouselControls" class="carousel slide image featured max-w-700 m-3" data-ride="carousel"
+				data-interval="2500">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<img class="d-block w-100" src="assets/images/ankama/kingcrusher_splash.jpg" alt="First slide">
@@ -194,7 +209,8 @@
 				Ankama : King Crusher
 			</p>
 			<p class="text-base text-left m-0">
-				Jeu d'action/aventure médiéval fantastique, King Crusher plonge le joueur dans un Rogue-Like sur mobile où ce dernier devra occire les ennemis du roi en contrôlant une équipe d'aventurier.
+				Jeu d'action/aventure médiéval fantastique, King Crusher plonge le joueur dans un Rogue-Like sur mobile
+				où ce dernier devra occire les ennemis du roi en contrôlant une équipe d'aventurier.
 			</p>
 			<!-- Labels -->
 			<div class="labels mt-2">
@@ -238,7 +254,7 @@
 
 	<!-- Personnal Project : Title -->
 	<div class="text-center m-5">
-		<p class="text-title m-0">PROJETS PERSONNELS</p>
+		<p id="project-perso-target" class="text-title m-0">PROJETS PERSONNELS</p>
 	</div>
 
 	<!-- Personnal Project-->
@@ -251,10 +267,10 @@
 		</div>
 		<div class="col-md m-3 py-2 px-2">
 			<p class="text-title text-left m-0">
-				Game Jame : Yokai Baam
+				Game Jame : Yōkai Baam
 			</p>
 			<p class="text-base text-left m-0">
-				Choisissez la bonne couleur et tirez sur les cibles dans ce stand de tir inspiré du folklore japonais !
+				Inspiré du folklore japonais, le joueur doit tirer sur les cibles en forme de yōkai en faisant attention à choisir la couleur correspondante !
 				<br>
 			</p>
 
@@ -273,13 +289,14 @@
 			</div>
 			<div class="line-2 my-3"></div>
 			<p class="text-base text-left m-0">
-				• Implémentation du gameplay
+				• Conception <br>
+				• Programmation <br>
+				• Implémentation des assets
 			</p>
 			<!-- Links -->
 			<div class="labels mt-2">
 				<div class="circle m-0 mr-2">
-					<a class="solid fas fa-download"
-						href="http://www.mediafire.com/file/8c56uooxveae1rb/file"
+					<a class="solid fas fa-download" href="http://www.mediafire.com/file/8c56uooxveae1rb/file"
 						target="_blank"></a>
 				</div>
 			</div>

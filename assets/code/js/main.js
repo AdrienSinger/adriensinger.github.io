@@ -1,27 +1,29 @@
 function OnPageLoaded() {
-    LinkTrigger();
-    SetupScrollToContact();
+    // LinkTrigger();
+    LinkScroll('contact');
+    LinkScroll('project-pro');
+    LinkScroll('project-perso');
 }
 
-function LinkTrigger() {
-    var trigger = $('.toggle-trigger');
-    var target = $('.toggle-target');
-    target.IsShown = false;
-    target.toggle();
+// function LinkTrigger() {
+//     var trigger = $('.toggle-trigger');
+//     var target = $('.toggle-target');
+//     target.IsShown = false;
+//     target.toggle();
 
-    trigger.click(function () {
-        target.toggle(350);
-        target.IsShown = !target.IsShown;
-        trigger.addClass(target.IsShown ? "fa-angle-up" : "fa-angle-down");
-        trigger.removeClass(target.IsShown ? "fa-angle-down" : "fa-angle-up");
-    });
-}
+//     trigger.click(function () {
+//         target.toggle(350);
+//         target.IsShown = !target.IsShown;
+//         trigger.addClass(target.IsShown ? "fa-angle-up" : "fa-angle-down");
+//         trigger.removeClass(target.IsShown ? "fa-angle-down" : "fa-angle-up");
+//     });
+// }
 
-function SetupScrollToContact() {
-    var goToContact = $('#go-contact');
+function LinkScroll(name) {
+    var goToContact = $('#go-' + name);
     goToContact.click(function () {
         $('html, body').animate({
-            scrollTop: $('#contact-target').offset().top
+            scrollTop: $('#' + name + '-target').offset().top
         }, 500);
     })
 }
